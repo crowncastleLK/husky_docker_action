@@ -1,0 +1,15 @@
+name: Build and publish a Docker image
+
+on: [push]
+
+jobs:
+  build:
+    name: Build & push docker image
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Build and push Husky Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
