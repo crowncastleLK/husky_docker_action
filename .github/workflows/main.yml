@@ -12,4 +12,4 @@ jobs:
       - name: Build and push Husky Docker image
         uses: docker/build-push-action@v2
         with:
-          context: ./Dockerfile
+          context: ./.github/Dockerfile
