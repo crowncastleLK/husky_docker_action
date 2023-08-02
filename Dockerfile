@@ -26,7 +26,7 @@ RUN apt-get install -y \
 RUN mkdir -p /ros2_ws/src
 WORKDIR /ros2_ws/src
 COPY ./husky ./husky
-COPY ./ouster-ros ./ouster-ros
+#COPY ./ouster-ros ./ouster-ros
 #COPY ./cci_husky ./cci_husky
 
 # needed to skip interactive install prompts
